@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{% extends 'myApp/parent.html' %}
+{% block title_block %}
+<h2> Ravi's blog </h2>
+{% endblock %}
+<body>
+  {% block content_block %}
+  <h1> Ravi's home blog </h1>
+  {% for post in post_list %}
+  {{ post.title }}
+  {% endfor %}
+  {% endblock %}
+</body>
+</html>
